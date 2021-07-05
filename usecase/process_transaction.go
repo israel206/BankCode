@@ -1,3 +1,5 @@
+package usecase
+
 import (
 	"github.com/israel206/BankCode/domain"
 	"github.com/israel206/BankCode/dto"

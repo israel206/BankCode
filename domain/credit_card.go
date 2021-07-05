@@ -1,3 +1,5 @@
+package domain
+
 import (
 	uuid "github.com/satori/go.uuid"
 	"time"

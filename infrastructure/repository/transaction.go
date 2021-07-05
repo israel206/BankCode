@@ -1,7 +1,7 @@
 import (
 	"database/sql"
 	"errors"
-	"github.com/codeedu/codebank/domain"
+	"github.com/israel206/BankCode/domain"
 )
 
 type TransactionRepositoryDb struct {

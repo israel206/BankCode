@@ -3,12 +3,14 @@ import (
 	"time"
 )
 
+// Repository para gravar os dados
 type TransactionRepository interface {
 	SaveTransaction(transaction Transaction, creditCard CreditCard) error
 	GetCreditCard(creditCard CreditCard) (CreditCard, error)
 	CreateCreditCard(creditCard CreditCard) error
 }
 
+// Struct, estrutura dos dados
 type Transaction struct {
 	ID           string
 	Amount       float64
@@ -19,6 +21,7 @@ type Transaction struct {
 	CreatedAt    time.Time
 }
 
+// Transaction, transações feitas
 func NewTransaction() *Transaction {
 	t := &Transaction{}
 	t.ID = uuid.NewV4().String()
@@ -26,6 +29,7 @@ func NewTransaction() *Transaction {
 	return t
 }
 
+// ProcessAndValidate, processo de validações
 func (t *Transaction) ProcessAndValidate(creditCard *CreditCard) {
 	if t.Amount+creditCard.Balance > creditCard.Limit {
 		t.Status = "rejected"

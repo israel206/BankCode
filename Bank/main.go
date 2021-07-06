@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/israel206/BankCode/domain"
-	"github.com/israel206/BankCode/infrastructure/repository"
-	"github.com/israel206/BankCode/usecase"
+	"github.com/israel206/BankCode/Bank/domain"
+	"github.com/israel206/BankCode/Bank/infrastructure/repository"
+	"github.com/israel206/BankCode/Bank/usecase"
 	_ "github.com/lib/pq"
 )
 

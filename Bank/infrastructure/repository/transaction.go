@@ -3,7 +3,8 @@ package repository
 import (
 	"database/sql"
 	"errors"
-	"github.com/israel206/BankCode/domain"
+
+	"github.com/israel206/BankCode/Bank/domain"
 )
 
 type TransactionRepositoryDb struct {

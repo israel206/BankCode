@@ -1,9 +1,10 @@
 package usecase
 
 import (
-	"github.com/israel206/BankCode/domain"
-	"github.com/israel206/BankCode/dto"
 	"time"
+
+	"github.com/israel206/BankCode/Bank/domain"
+	"github.com/israel206/BankCode/Bank/dto"
 )
 
 type UseCaseTransaction struct {

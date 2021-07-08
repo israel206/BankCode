@@ -61,7 +61,7 @@ docker-compose up
 
 ## 💻 Project
 
-App to always remember to water your plants 🌱
+Credit card payment project 💳💰
 
 ---
 

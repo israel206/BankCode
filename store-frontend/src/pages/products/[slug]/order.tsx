@@ -1,4 +1,14 @@
-import { Typography, Button, ListItem, ListItemAvatar, Avatar, TextField, Grid, ListItemText, Box } from "@material-ui/core";
+import {
+  Typography,
+  Button,
+  ListItem,
+  ListItemAvatar,
+  Avatar,
+  TextField,
+  Grid,
+  ListItemText,
+  Box,
+} from "@material-ui/core";
 import axios from "axios";
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/dist/client/router";
@@ -44,7 +54,10 @@ const OrderPage: NextPage<OrderPageProps> = ({ product }) => {
         <ListItemAvatar>
           <Avatar src={product.image_url} />
         </ListItemAvatar>
-        <ListItemText primary={product.name} secondary={`R$ ${product.price}`} />
+        <ListItemText
+          primary={product.name}
+          secondary={`R$ ${product.price}`}
+        />
       </ListItem>
       <Typography component="h2" variant="h6" gutterBottom>
         Pague com cartão de crédito
@@ -55,17 +68,33 @@ const OrderPage: NextPage<OrderPageProps> = ({ product }) => {
             <TextField {...register("name")} required label="Nome" fullWidth />
           </Grid>
           <Grid item xs={12} md={6}>
-            <TextField {...register("number")} label="Numero do cartão" required fullWidth inputProps={{ maxLength: 16 }} />
+            <TextField
+              {...register("number")}
+              label="Numero do cartão"
+              required
+              fullWidth
+              inputProps={{ maxLength: 16 }}
+            />
           </Grid>
           <Grid item xs={12} md={6}>
-            <TextField {...register("cvv")} required type="number" label="CVV" fullWidth />
+            <TextField
+              {...register("cvv")}
+              required
+              type="number"
+              label="CVV"
+              fullWidth
+            />
           </Grid>
           <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
               <Grid item xs={6}>
                 <TextField
                   {...register("expiration_month")}
-                  required type="number" label="Expiração mês" fullWidth onChange={(e) =>
+                  required
+                  type="number"
+                  label="Expiração mês"
+                  fullWidth
+                  onChange={(e) =>
                     setValue("expiration_month", parseInt(e.target.value))
                   }
                 />
@@ -73,7 +102,11 @@ const OrderPage: NextPage<OrderPageProps> = ({ product }) => {
               <Grid item xs={6}>
                 <TextField
                   {...register("expiration_year")}
-                  required type="number" label="Expiração ano" fullWidth onChange={(e) =>
+                  required
+                  type="number"
+                  label="Expiração ano"
+                  fullWidth
+                  onChange={(e) =>
                     setValue("expiration_year", parseInt(e.target.value))
                   }
                 />

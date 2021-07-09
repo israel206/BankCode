@@ -1,4 +1,12 @@
-import { Avatar, Chip, Grid, ListItem, ListItemAvatar, ListItemText, Typography } from "@material-ui/core";
+import {
+  Avatar,
+  Chip,
+  Grid,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Typography,
+} from "@material-ui/core";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import axios from "axios";

@@ -1,4 +1,12 @@
-import { Card, CardMedia, CardContent, CardActions, CardHeader, Typography, Button } from "@material-ui/core";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  CardHeader,
+  Typography,
+  Button,
+} from "@material-ui/core";
 import axios from "axios";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/dist/client/router";
@@ -24,9 +32,16 @@ const ProductDetailPage: NextPage<ProductDetailPageProps> = ({ product }) => {
         <title>{product.name} - Detalhes do produto</title>
       </Head>
       <Card>
-        <CardHeader title={product.name.toUpperCase()} subheader={`R$ ${product.price}`} />
+        <CardHeader
+          title={product.name.toUpperCase()}
+          subheader={`R$ ${product.price}`}
+        />
         <CardActions>
-          <Link href="/products/[slug]/order" as={`/products/${product.slug}/order`} passHref >
+          <Link
+            href="/products/[slug]/order"
+            as={`/products/${product.slug}/order`}
+            passHref
+          >
             <Button size="small" color="primary" component="a">
               Comprar
             </Button>

@@ -53,7 +53,11 @@ This project was developed using the following technologies:
 **Follow the steps below**
 
 ```bash
+# start
 docker-compose up
+
+# container kill
+docker-compose down
 
 ```
 
@@ -62,6 +66,8 @@ docker-compose up
 ## 💻 Project
 
 Credit card payment project 💳💰
+
+Credit card payment transaction application, using microservices with docker and kubernete
 
 ---
 

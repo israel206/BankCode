@@ -27,7 +27,7 @@
 This project was developed using the following technologies:
 
 * Apache Kafka
-* codebank (Golang)
+* CodeBank (Golang)
 * Back-end e front-end da loja (Nest.js e Next.js)
 * Back-end e front-end das faturas (Nest.js e Next.js)
 

@@ -6,10 +6,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/israel206/infrastructure/grpc/server"
-	"github.com/israel206/infrastructure/kafka"
-	"github.com/israel206/infrastructure/repository"
-	"github.com/israel206/usecase"
+	"github.com/israel206/codebank/infrastructure/grpc/server"
+	"github.com/israel206/codebank/infrastructure/kafka"
+	"github.com/israel206/codebank/infrastructure/repository"
+	"github.com/israel206/codebank/usecase"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )

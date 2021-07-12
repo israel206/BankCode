@@ -1,6 +1,8 @@
 package dto
 
-import "time"
+import (
+	"time"
+)
 
 type Transaction struct {
 	ID              string    `json:"transaction_id"`

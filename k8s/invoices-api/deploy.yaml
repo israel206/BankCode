@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: invoice-api
-          image: wesleywillians/imersao3-invoice-api:latest
+          # image: wesleywillians/imersao3-invoice-api:latest
+          image: charlles2019/imersao3-invoice-api:latest
           ports:
             - containerPort: 3000
           volumeMounts:
@@ -28,5 +29,3 @@ spec:
             items:
               - key: env
                 path: .env
-          
-        

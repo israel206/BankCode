@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: codebank
-          image: wesleywillians/imersao3-codebank:latest
+          # image: wesleywillians/imersao3-codebank:latest
+          image: charlles2019/imersao3-codebank:latest
 
           volumeMounts:
             - name: codebank-volume
@@ -22,7 +23,6 @@ spec:
               subPath: .env
           ports:
             - containerPort: 50052
-              
 
       volumes:
         - name: codebank-volume
@@ -31,5 +31,3 @@ spec:
             items:
               - key: env
                 path: .env
-          
-        
